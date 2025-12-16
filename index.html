@@ -1,0 +1,128 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo/logo.svg" alt="Logo Un animal pour tous" class="logo-img" />
+                <span>Un animal pour tous</span>
+            </div>
+                <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Ouvrir le menu" />
+                <label for="nav-toggle" class="menu-btn" aria-controls="site-nav" aria-expanded="false">
+                    <span class="menu-lines" aria-hidden="true"></span>
+                    <span class="menu-text">Menu</span>
+                </label>
+                <nav class="nav" id="site-nav">
+                <a href="#" class="nav-link">Accueil</a>
+                <a href="#" class="nav-link">Services</a>
+                <a href="#" class="nav-link">Animal</a>
+                <a href="#" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <img src="images/hero_bg/hero_bg.jpg" alt="" class="hero-bg-img" loading="lazy" />
+            <div class="hero-content">
+                <h1 class="hero-title">Bienvenue sur MonSite</h1>
+                <a href="#services" class="btn primary hero-btn">Découvrir nos services</a>
+            </div>
+        </section>
+
+        <!-- Cards Section - Animaux -->
+        <section class="cards-section" id="services">
+            <div class="container">
+                <h2 class="section-title">Nos Animaux</h2>
+                <div class="cards-grid">
+                    <div class="animal-card">
+                        <img src="images/animaux/chats.webp" alt="Chat" class="animal-image" loading="lazy" />
+                        <h3 class="animal-title">Chat</h3>
+                    </div>
+                    <div class="animal-card">
+                        <img src="images/animaux/chiens.webp" alt="Chien" class="animal-image" loading="lazy" />
+                        <h3 class="animal-title">Chien</h3>
+                    </div>
+                    <div class="animal-card">
+                        <img src="images/animaux/lapins.webp" alt="lapins" class="animal-image" loading="lazy" />
+                        <h3 class="animal-title">lapins</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Presentation Split Section -->
+        <section class="presentation" id="presentation">
+            <div class="container presentation-grid">
+                <div class="presentation-image-wrap">
+                    <img src="images/animaux/chiens2.jpg" alt="Chiens" class="presentation-image" loading="lazy" />
+                </div>
+                <div class="presentation-text">
+                    <h2>l'histoire du chien Ermir</h2>
+                    <p>Ermir a été abandonné au bord d’une route, affamé et craintif. Nous l’avons recueilli, soigné, et accompagné pas à pas pour qu’il retrouve confiance.</p>
+                    <p>Grâce à des soins vétérinaires, une alimentation adaptée et des sorties quotidiennes, Ermir a repris des forces. Aujourd’hui, il profite d’une nouvelle famille et d’un foyer chaleureux.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Basic Contact Form -->
+        <section class="contact" id="contact">
+            <div class="container contact-inner">
+                <div class="contact-text">
+                    <h2>Contactez-nous si vous êtes intéressé par un animal</h2>
+                    <p>Laissez-nous un message, nous vous répondons rapidement.</p>
+                </div>
+                <form class="contact-form" action="#" method="post">
+                    <label class="form-label" for="email">Email</label>
+                    <input class="form-input" type="email" id="email" name="email" placeholder="votre@email.com" required />
+
+                    <label class="form-label" for="message">Message</label>
+                    <textarea class="form-textarea" id="message" name="message" rows="4" placeholder="Votre message" required></textarea>
+
+                    <button class="btn primary form-button" type="submit">Envoyer</button>
+                </form>
+            </div>
+        </section>
+
+            <!-- FAQ Section (Accordion) -->
+            <section class="faq" id="faq">
+                <div class="container faq-inner">
+                    <h2 class="faq-title">FAQ</h2>
+                    <div class="faq-list">
+                        <details class="faq-item">
+                            <summary class="faq-question">Comment adopter un animal ?</summary>
+                            <div class="faq-answer">
+                                Nous organisons une rencontre, vérifions la compatibilité, puis finalisons l’adoption avec un suivi personnalisé.
+                            </div>
+                        </details>
+                        <details class="faq-item">
+                            <summary class="faq-question">Quels soins fournissez-vous ?</summary>
+                            <div class="faq-answer">
+                                Vaccins à jour, bilan vétérinaire, alimentation adaptée et conseils d’éducation avant l’adoption.
+                            </div>
+                        </details>
+                        <details class="faq-item">
+                            <summary class="faq-question">Puis-je rencontrer l’animal avant ?</summary>
+                            <div class="faq-answer">
+                                Oui, une visite est planifiée pour que vous puissiez passer du temps avec lui et poser vos questions.
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <span class="footer-brand">Un animal pour tous</span>
+            <span class="footer-copy">© 2025 Un animal pour tous. Tous droits réservés.</span>
+        </div>
+    </footer>
+
+</body>
+</html>
